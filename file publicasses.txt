@@ -1,0 +1,1 @@
+s3://bucketasses/user4_credentials.csv
