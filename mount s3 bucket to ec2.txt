@@ -8,9 +8,9 @@
 	   yum update -y
 	   sudo amazon-linux-extras install epel -y
 	   sudo yum install s3fs-fuse -y
-	   echo "Access_key":"Secret_access_key" > ${HOME}/.sweetypasswd
+	   echo "Access_key":"Secret_access_key" > ${HOME}/.payalpasswd
 	   ls -la /root/
-	   chmod 600 ${HOME}/.sweetypasswd
+	   chmod 600 ${HOME}/.payalpasswd
 	   ls -la /root/
 	   mkdir /mounting-dir 
            s3 payalbucket /mounting-dir -o passwd_file=${HOME}/.payalpasswd
