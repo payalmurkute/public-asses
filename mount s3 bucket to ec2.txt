@@ -1,0 +1,37 @@
+1st step = create an instance 
+           create .pem files
+
+2nd step = login mobaxtern using public ip of instance and .pem file
+
+3re step = sudo yum update
+      	   sudo su
+	   yum update -y
+	   sudo amazon-linux-extras install epel -y
+	   sudo yum install s3fs-fuse -y
+	   echo "Access_key":"Secret_access_key" > ${HOME}/.sweetypasswd
+	   ls -la /root/
+	   chmod 600 ${HOME}/.sweetypasswd
+	   ls -la /root/
+	   mkdir /mounting-dir 
+           s3 payalbucket /mounting-dir -o passwd_file=${HOME}/.payalpasswd
+	   mount | grep mounting-dir
+	   cd /mounting-dir
+
+4th step = create a file =>fileA
+	   ls
+	   
+
+5th step =  go to console 
+            Bucket 
+            object 
+            fileA = Present in aws console also
+
+6th step =  Bucket 
+            Addfiles 
+            notefile.txt 
+            upload  
+
+7th step =  go to the Mobaxtern
+	    ls
+	    notefile.txt 
+            Mounting is done
