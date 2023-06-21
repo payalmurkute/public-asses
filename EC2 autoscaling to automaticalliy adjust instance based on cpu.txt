@@ -1,0 +1,28 @@
+1 open autoscalling group > create auto scalling group > switch launch config.. >
+  create launch config.. > give the name >--  instance (AMI ID) >
+   select instance type(t2 micro) --create new security group > add rule (HTTP) 
+  select key pair --create launch config..
+2 again going autoscaling group > create auto scalling group >-- give name >create launch config... (select now create launch config )-- next
+3 network > vpc (bydefault) > select all availabilty zone 
+4 load bancer > health check > next 
+ -- desired capacity = 3
+ --minimum caopacity =2
+ --maximum capacity=5 --> next--next and create auto scaling group
+5 create increase dynamic policy
+ > autoscaling group > select first > click dynamic scaling policy > select policy type(simple scaling)
+--policy name (increase )
+--take the action (2) -- 300 sec 
+6 create decrease dynamic policy
+> policy name >take action (1)> 300 sec
+
+7 ----open cloud watch 
+  --In alarm --create > select matrix >ec2 > select auto scaling >cpu utilization  --for increase = Greater / equal  = 70 (threshold value)
+                    --for decrease = lower /equal  = 20 (threshold value)
+
+8   to  check instance create 
+     in EC2 show decrese instance 
+     in EC2 show increase instace ( before check first take SSH we should increase their traffic by using stress comand after check 
+
+              ---adjust number of instance by using cpu utilization-----
+
+
