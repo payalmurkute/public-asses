@@ -1,0 +1,7 @@
+1 create s3 bucket
+2 create policy 1 user give --read and write permission 
+                          2 user give --read permission only
+3 create policy --> celect s3 service > acces level --read and write -- resorces copy bucket s3 (ARN)-- create policy
+4 create poliicy in 2nd user > gives only read permission
+5 create user >user name --attach policy (read and write)--create user
+6 create 2nd user > user name --attach policy (only read) --create user
