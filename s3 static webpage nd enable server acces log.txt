@@ -1,0 +1,12 @@
+1 first create s3 bucket
+2 put there any object > copy object url > paste new tab > 
+ gives error >  going to the permission > give public acces > then going to the properties > enable web hosting >
+3 click permission   > edit object ownership > enable ACL 
+4 still gives error 
+5 select object > action > make public using ACL > make public
+6 finally publically show your object
+7 in acces of log > to create other 2nd s3 bucket > gives all access 
+8 in 1st bucket > properties > enable--acces log >  browse s3 bucket > select target bucket
+9 in 1st bucket every object gives (read) permission > then after 1 to 2 hours in your 2nd bucket destination bucket show the objet
+
+---- host static webpage of s3 and same bucket use to server acces log-----
