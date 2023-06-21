@@ -1,0 +1,17 @@
+1 create s3 bucket > mumbai reasion > public asses 
+   versioning enable 
+2 create s3 bucket > another reasion > public asses 
+  versioning
+3 in any 1 bucket gives replication rule add
+   --management(2nd bucket) > create replication rule >source buket --all object
+   chose path (replicate which bucket)
+  > add i am role > destination > additional > next
+4 yes - replication existing object
+5 joob setting
+-- browse s3 > permission > --chosse bucket (2nd account path) 
+ > save 
+6  going to s3 bucket >-- put object 
+  and to check same object show your 2nd (replication bucjket)
+7 you delete originol data your bucket but replication bucket data not delete
+
+      ---replication done-----
