@@ -1,0 +1,18 @@
+1 create instance > give name > select AMI image >
+   select t2 micro instance type > key pair select > 
+network setting :- alloe ssh >https> http traffic from the internet>
+ advanced details > put user data 
+ 
+ user data 
+ 
+   #!/bin/bash
+       sudo yum update -y
+       sudo yum install -y httpd
+       sudo systemctl start httpd
+       sudo systemctl enable httpd
+       sudo echo "Welcome to the darkweb $(hostname -f)" >                 /var/www/html/index.html
+
+2 launch instance 
+3 open instance >copy public id > and check your browser
+
+        -------host webpage using httpd-------
