@@ -1,0 +1,5 @@
+1 already created ec2 instancce > action > image and templates
+    > create AMI image 
+2  in resources --select AMI > select image > create launch instance from AMI
+
+            ------create AMI by template------
